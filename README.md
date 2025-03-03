@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+ # 🚀 Excited to share my latest project using Next.js!
+I developed a that includes multiple sections like Header, Hero, About Us, Portfolio, and Footer. Each section is styled using Tailwind CSS, ensuring a clean and modern design.
 
-## Getting Started
+# 💡 Key highlights of the project:
 
-First, run the development server:
+Header: A clean, centered header with easy navigation.
+Hero Section: A hero section with a call-to-action button for further exploration.
+About Us: Simple yet effective about section with personal info.
+Portfolio: Displays my latest assignments with interactive buttons for detailed viewing.
+Footer: A footer for smooth navigation and a unified design.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# 📂 Code Snippet:
+Here’s a small peek into the core structure using Next.js and Tailwind CSS:
+
+```
+const Home = () => {
+  return (
+    <head>
+      <body className="font-sans bg-gray-100">
+
+     {/* Header */}
+     <header className="bg-blue-600 text-white py-6">
+      <a href="/header"><h1 className="text-4xl font-bold container mx-auto text-center">Header </h1></a>
+     </header>
+
+     {/* Hero Section */}
+     <section className="bg-gray-50 py-20">
+<h2 className="text-5xl font-bold text-gray-800 container mx-auto text-center"> Hero Section</h2>
+<p className="mt-4 text-gray-600 conatiner text-center">This is Hero Section of the Page</p>
+<a href="/button"><button className="mt-6 bg-blue-500 text-white px-6 py-3 mx-auto grid place-content-center text-center rounded-lg hover:bg-blue-400">Details</button></a>
+     </section>
+
+{/* About Section  */}
+<section className="bg-white py-20 container mx-5 text-center">
+  <h2 className="text-4xl font-bold text-gray-800">About Us</h2>
+  <p className="mt-4 text-gray-600">Created by Ali Zaid</p>
+</section>
+
+{/* Portfolio Section  */}
+<section className="bg-gray-50 py-20 container mx-auto text-center">
+  <h2 className="text-4xl font-bold text-gray-800">These are my latest assignments</h2>
+  <div className="grid grid-cois-1 md:grid-cois-2 lg:grid-cois-3 gap-8 mt-8">
+
+{/* Portfolio Assignmants  */}
+<div className=" bg-white p-6 shadow-lg "><a href="/assignment">
+<div><button className="mt-6 bg-blue-500 text-white px-6 py-3 mx-auto grid place-content-center text-center rounded-lg hover:bg-blue-400">Assignment 1</button></div></a>
+<a href="/assignment"><div><button className="mt-6 bg-blue-500 text-white px-6 py-3 mx-auto grid place-content-center text-center rounded-lg hover:bg-blue-400">Assignment 2</button></div></a>
+ </div></div>
+</section>
+
+{/* Footer  */}
+<footer className="bg-blue-600 text-4xl text-white py-6 container mx-auto text-center">
+ <a href="/footer"><p>Footer</p></a>
+</footer>
+  </body>
+    </head>
+  )
+}
+
+export default Home
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
