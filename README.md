@@ -1,5 +1,5 @@
  # 🚀 Excited to share my latest project using Next.js!
-I developed a that includes multiple sections like Header, Hero, About Us, Portfolio, and Footer. Each section is styled using Tailwind CSS, ensuring a clean and modern design.
+I developed a website that includes multiple sections like Header, Hero, About Us, Portfolio, and Footer. Each section is styled using Tailwind CSS, ensuring a clean and modern design.
 
 # 💡 Key highlights of the project:
 
